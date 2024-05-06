@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>College Vidya</title>
+</head>
+<script src="https://kit.fontawesome.com/bea3b58fa0.js" crossorigin="anonymous"></script>
+
+<body>
+    <header>
+        <h2>Student Registration System</h2>
+        <p>Welcome to the College Vidya Portal! This platform is designed to cater to all your academic needs, from registration to accessing a plethora of resources to aid your learning journey. Whether you're a new student embarking on your college adventure or a returning student seeking additional support, this portal is your one-stop destination.</p>
+    </header>
+    <section>
+        <div class="s_container">
+            <form id="formData">
+                <label>Student Id</label>
+                <input type="number" placeholder="Student Id" id="idno" name="idno" required>
+                <label>Name</label>
+                <input type="text" placeholder="Name" id="name" name="name" required>
+                <label>Email Id</label>
+                <input type="email" placeholder="Email" id="email" name="email" required>
+                <label>Contact No</label>
+                <input type="number" placeholder="Contact No" id="phone" name="phone" required>
+                <button class="btn" type="button" onclick="addData()"><i class="fa-solid fa-plus"></i>Add</button>
+                <button class="clear-btn" onclick="location.reload();">Clear</button>
+            </form>
+
+
+        </div>
+        <h3>Student List</h3>
+
+        <!-- Display Section Of The Code -->
+        <div class="d_container">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student details will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
